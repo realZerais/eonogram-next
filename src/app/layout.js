@@ -1,15 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import { Navigation } from "@/components/Navigation";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Eonogram"
@@ -18,10 +11,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head >
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased w-full flex justify-center bg`}
+        className= 'antialiased'
       >
-        {children}
+        <div className="w-full flex flex-col justify-center items-center bg-background">
+          <Navigation></Navigation>
+          {children}
+        </div>
+
       </body>
     </html>
   );

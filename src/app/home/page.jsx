@@ -1,5 +1,5 @@
 import { createClient } from '@/utils/supabase/server';
-import { Post } from '@/components/Posts/Post';
+import { Post } from '@/components/Post';
 
 export default async function Home() {
   const supabase = await createClient();

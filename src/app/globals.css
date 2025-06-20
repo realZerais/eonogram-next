@@ -1,3 +1,20 @@
 @import "tailwindcss";
 
 
+@theme{
+    --color-primary: #1C1C1E;
+    --color-secondary: #D8D8D8;
+    --color-accent: #C2B280;
+    --color-background: #F9F9F7;
+    --color-danger: #B85750;
+}
+
+@layer base {
+    h1, h2, h3, h4, h5{
+        font-family: 'Satoshi Bold', sans-serif;
+    }
+
+    p, a{
+        font-family: 'Satoshi Regular', sans-serif;
+    }
+  }
