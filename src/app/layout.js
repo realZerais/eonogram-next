@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       <body
         className= 'antialiased'
       >
-        <div className="w-full flex flex-col justify-center items-center bg-background">
+        <div className="w-full flex flex-col justify-start items-center bg-background min-h-screen">
           <Navigation></Navigation>
           {children}
         </div>

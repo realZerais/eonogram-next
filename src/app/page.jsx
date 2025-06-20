@@ -1,9 +1,6 @@
 import { Post } from "@/components/Post";
 import { createClient } from '@/utils/supabase/server';
-
-
-
-
+import { Hero } from "@/components/Hero";
 
 export default async function Home() {
 
@@ -12,31 +9,9 @@ export default async function Home() {
 
   
   return (
-    <div className="w-full px-55 m-5">
-      {posts.map((post) =>(
-        <Post post={post} key={post.id}></Post>
-      ))}   
-
-{posts.map((post) =>(
-        <Post post={post} key={post.id}></Post>
-      ))} 
-
-{posts.map((post) =>(
-        <Post post={post} key={post.id}></Post>
-      ))} 
-
-{posts.map((post) =>(
-        <Post post={post} key={post.id}></Post>
-      ))} 
-
-
-{posts.map((post) =>(
-        <Post post={post} key={post.id}></Post>
-      ))} 
-
-{posts.map((post) =>(
-        <Post post={post} key={post.id}></Post>
-      ))} 
+    <div className="w-full px-10 m-5">
+      <Hero/>
+      
     </div>
   );
 }

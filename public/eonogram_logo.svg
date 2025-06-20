@@ -8,7 +8,7 @@
   </defs>
   
   <!-- Icon: Stylized camera aperture with time concept -->
-  <g transform="translate(40, 40)">
+  <g transform="translate(30, 40)">
     <!-- Outer circle -->
     <circle cx="0" cy="0" r="20" fill="none" stroke="#1C1C1E" stroke-width="1"/>
     
